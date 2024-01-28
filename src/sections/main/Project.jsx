@@ -4,11 +4,11 @@ export default function Project() {
     return (
         <>
             <div className="m-auto w-8/12 sm:w-full space-y-6 text-justify mb-4 font-body">
-                <p className="text-white font-medium text-2xl text-center p-6">
+                <p className="text-white font-medium text-2xl text-center pt-8 pb-4">
                     Personal Projects
                 </p>
                 <div className="flex flex-row flex-wrap justify-start items-center gap-2">
-                    <div className="rounded-lg w-full xl:w-[49.5%] p-3 bg-opacity-5 border-t border-opacity-10 border-white bg-white cursor-pointer">
+                    <div className="rounded-lg w-full xl:w-[49.5%] p-4 bg-opacity-5 border-t border-opacity-10 border-white bg-white cursor-pointer">
                         <div className="flex flex-col sm:flex-row gap-3 items-start">
                             <div>
                                 <img

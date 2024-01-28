@@ -46,7 +46,7 @@ export default function Experience() {
                                     index % 2 == 0
                                         ? "lg:self-start"
                                         : "lg:self-end"
-                                } rounded-lg bg-opacity-5 border-t border-opacity-10 border-white bg-white p-2 flex flex-row flex-wrap sm:flex-nowrap justify-start items-start gap-2 w-full md:w-3/4 lg:w-3/5 xl:w-[49.5%]`}
+                                } rounded-lg bg-opacity-5 border-t border-opacity-10 border-white bg-white p-4 flex flex-row flex-wrap sm:flex-nowrap justify-start items-start gap-2 w-full md:w-3/4 lg:w-3/5 xl:w-[49.5%]`}
                             >
                                 <div className="p-3 rounded-lg bg-white shrink-0 grow-0 object-cover">
                                     <img

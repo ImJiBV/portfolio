@@ -20,7 +20,7 @@ export default function Skills() {
     return (
         <>
             <div className="m-auto w-8/12 sm:w-full space-y-4 text-center font-body">
-                <div className="p-6">
+                <div className="p-10">
                     <p className="text-white font-extralight text-2xl underline underline-offset-8">
                         Full-stack Developer
                     </p>

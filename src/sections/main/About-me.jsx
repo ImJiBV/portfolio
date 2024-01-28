@@ -1,11 +1,11 @@
 export default function AboutMe() {
     return (
         <>
-            <div className="m-auto w-8/12 sm:w-full space-y-6 text-justify font-body">
-                <p className="text-white font-medium text-2xl text-center p-6">
+            <div className="m-auto w-8/12 sm:w-full text-justify font-body">
+                <p className="text-white font-medium text-2xl text-center p-2">
                     About
                 </p>
-                <p className="text-white font-extralight text-2xl underline underline-offset-8">
+                <p className="text-white font-extralight text-2xl underline underline-offset-8 mb-10">
                     Get to know me
                 </p>
                 <p className="font-thin text-base text-white">
