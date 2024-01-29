@@ -9,19 +9,19 @@ import Project from "../sections/main/Project";
 import ContactMe from "../sections/main/Contact";
 import Experience from "../sections/main/Experience";
 
-export default function MainPage() {
+export default function MainPage({ state }) {
     return (
         <>
             <Helmet>
                 <title> Portfolio | James Villanueva</title>
             </Helmet>
             <Wrapper>
-                <Main />
+                <Main state={state} />
                 <AboutMe />
                 <Skills />
-                <Project />
-                <Experience />
-                <ContactMe />
+                <Project state={state} />
+                <Experience state={state} />
+                <ContactMe state={state} />
             </Wrapper>
         </>
     );

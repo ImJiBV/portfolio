@@ -1,6 +1,6 @@
 import { dotIcon } from "../../components/page-icons/page-icons";
 
-export default function Experience() {
+export default function Experience({ state }) {
     const timeline = [
         {
             position: "Lead Software Engineer",
@@ -32,8 +32,13 @@ export default function Experience() {
         },
     ];
     return (
-        <>
-            <div className="m-auto pt-40 w-8/12 sm:w-full space-y-6 text-justify font-body">
+        <div
+            className="experience"
+            ref={(ref) => {
+                state[3] = ref;
+            }}
+        >
+            <div className="m-auto pt-28 w-8/12 sm:w-full space-y-6 text-justify font-body">
                 <p className="text-white font-medium text-2xl text-center p-6">
                     Experience
                 </p>
@@ -79,34 +84,8 @@ export default function Experience() {
                         );
                     })}
                 </div>
-
-                {/*   <div
-                            className={`text-white font-body ${
-                                index % 2 == 0 ? "" : ""
-                            }`}
-                        >
-                            adsfads
-                        </div> */}
-                {/* <div className="m-auto py-10 w-8/12 sm:w-full space-y-6 text-justify font-body">
-                <p className="text-white font-medium text-2xl text-center p-6">
-                    Experience
-                </p>
-                <div className="bg-red-500">
-                    {timeline.map((key, index) => {
-                        return (
-                            <div
-                                className={`${
-                                    index % 2 == 0 ? "ml-auto" : "mr-auto"
-                                }`}
-                            >
-                                {index}
-                            </div>
-                        );
-                    })}
-                </div>
-            </div> */}
             </div>
-        </>
+        </div>
     );
 }
 function SVG({ Icon }) {

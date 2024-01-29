@@ -6,11 +6,11 @@ import HNavigation from "../hnav/Navigation";
 
 // ----------------------------------------------------------------------
 
-export default function MainLayout() {
+export default function MainLayout({ state }) {
     return (
         <>
             <Wrapper>
-                <HNavigation />
+                <HNavigation state={state} />
             </Wrapper>
             <VNavigation />
 

@@ -1,8 +1,13 @@
 import { RightArrow } from "../../components/page-icons/page-icons";
 
-export default function ContactMe() {
+export default function ContactMe({ state }) {
     return (
-        <>
+        <div
+            className="contact"
+            ref={(ref) => {
+                state[2] = ref;
+            }}
+        >
             <div className="m-auto w-8/12 sm:w-full space-y-6 text-justify font-body py-60">
                 <p className="text-white font-medium text-2xl text-center p-6">
                     Say Hi!
@@ -74,7 +79,7 @@ export default function ContactMe() {
                     </button>
                 </div>
             </div>
-        </>
+        </div>
     );
 }
 

@@ -10,12 +10,14 @@ const Loadable = (Component) => (props) =>
         </Suspense>
     );
 
-export default function Router() {
+export default function Router({ state }) {
     return useRoutes([
         {
             path: "/portfolio",
-            element: <MainLayout />,
-            children: [{ path: "/portfolio", element: <MainPage /> }],
+            element: <MainLayout state={state} />,
+            children: [
+                { path: "/portfolio", element: <MainPage state={state} /> },
+            ],
         },
     ]);
 }

@@ -1,8 +1,13 @@
 import dolphin from "/projects-images/DolphinR.png";
 
-export default function Project() {
+export default function Project({ state }) {
     return (
-        <>
+        <div
+            className="project"
+            ref={(ref) => {
+                state[1] = ref;
+            }}
+        >
             <div className="m-auto w-8/12 sm:w-full space-y-6 text-justify mb-4 font-body">
                 <p className="text-white font-medium text-2xl text-center pt-8 pb-4">
                     Personal Projects
@@ -210,6 +215,6 @@ export default function Project() {
                     </div> */}
                 </div>
             </div>
-        </>
+        </div>
     );
 }
