@@ -5,7 +5,7 @@ import {
     LinkedInIcon,
 } from "../nav-icons/icon-list";
 
-import cv from "../../../../public/my-cv/Villanueva-James-Ian-CV-X.pdf";
+import cv from "/my-cv/Villanueva-James-Ian-CV-X.pdf?url";
 
 export default function VNavigationList() {
     return (
